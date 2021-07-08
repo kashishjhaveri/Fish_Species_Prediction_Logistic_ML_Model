@@ -11,6 +11,7 @@ import pickle
 import pandas as pd
 from flask import Flask, request
 from flask import Flask, request, jsonify, render_template
+import os
 
 app=Flask(__name__)
 pickle_in = open("Fish_Species.pkl","rb")
@@ -35,7 +36,7 @@ def predict():
     return render_template('index.html', prediction_text='The fish belong to species {}'.format(prediction))
     
     
-
+port = int(os.getenv('PORT','5000'))
 
 if __name__=='__main__':
-    app.run()
+    app.run(debug=True,port=port)

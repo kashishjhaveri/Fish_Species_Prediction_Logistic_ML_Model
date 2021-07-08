@@ -36,7 +36,7 @@ def predict():
     return render_template('index.html', prediction_text='The fish belong to species {}'.format(prediction))
     
     
-port = int(os.getenv('PORT','5000'))
+#port = int(os.getenv('PORT'))
 
 if __name__=='__main__':
-    app.run(debug=True,port=port)
+    app.run()

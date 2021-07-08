@@ -22,4 +22,4 @@ flask run
 
 ## Testing
 
-The flask app has been hosted on Heroku and is ready for testing. Click the [link]() to test the app hosted on Heroku
+The flask app has been hosted on Heroku and is ready for testing. Click the [link](fish-species-prediction-ml.herokuapp.com/) to test the app hosted on Heroku
